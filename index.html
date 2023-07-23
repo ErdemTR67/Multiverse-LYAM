@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Multiverse-LYAM</title>
+<body>
+<header>
+    <a href="#" class="logo"><span>M</span>ultiverse-LYAM</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Les pays</a></li>
+        <a href="#contact" class="btn-reserve"onclick="toggleMenu();">Discord</a>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>Un nouveau monde à notre façon</h2>
+        <p>Bienvenue sur Multiverse-LYAM, un monde où vous pourrez créer votre pays de A à Z ! Gérez votre pays comme il se doit, débattez entre dirigeants, négociez, bâtissez vos villes, mais surtout, AMUSEZ-VOUS !</p>
+        
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>Nous sommes une bande de potes qui avons démarré une survie Minecraft classique. Cependant, les choses ont pris une autre tournure. Des idées se sont mises en place, des projets se sont réalisés pour finalement donner naissance à Multiverse-LYAM. Les membres principaux ayant participé à la réalisation de ce projet sont Refrozz, Sheeponhill, Xafro, Vultyy, Liziox et Alessioval007.
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./images/team2.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>L</span>es pays</h2>
+        <p>Voici les pays faisant partie des débuts du projet Multiverse-LYAM.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/galata3.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Galata</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/hisp3.png" alt="">
+            </div>
+            <div class="text">
+                <h3>États-Unis d'Hispanie</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/yamaland2.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Yamaland</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/mkc.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Mijn Kamp Country</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/sc3.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Sun Country</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./images/firisland2.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Fir Island</h3>
+            </div>
+        </div>
+        
+    </div>
+ </div>
+ <div class="titre">
+    <a href="#" class="btn1">Voir Plus</a>
+ </div>
+</section>
+
+ <section class="contact" id="contact">
+     <div class="titre noir">
+         <h2 class="titre-2"><span>D</span>iscord</h2>
+         <p1>Rejoignez-nous sur Discord pour suivre les avancées de notre monde!</p1>
+     </div>
+     <div class="contactform">
+        <img src="./images/discord.png" alt="" width="50" height="50"><a href="https://discord.gg/neWktKdzmu">https://discord.gg/neWktKdzmu</a>
+     </div>
+ </section>
+ <div class="copyright">
+     <p>Copyright ©<a href="#">Refrozz </a> .Tous droits réservés.</p>
+ </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
+</html>
